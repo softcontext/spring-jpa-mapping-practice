@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper=false)
 //@Entity
 @AttributeOverride(name="name", column=@Column(name="MEMBER_NAME"))
 public class Member extends BaseEntity {

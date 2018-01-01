@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper=false)
 //@Entity
 @AttributeOverrides({
 	@AttributeOverride(name="id", column=@Column(name="SELLER_ID")),

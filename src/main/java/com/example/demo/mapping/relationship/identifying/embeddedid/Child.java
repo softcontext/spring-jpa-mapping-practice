@@ -20,7 +20,7 @@ public class Child {
 	@EmbeddedId
 	private ChildId id;
 	
-	@MapsId("parentId") // 외래키와 매핑한 연관관계를 기본 키에도 매핑한다.
+	@MapsId("parentId")
 	@ManyToOne
 	@JoinColumns({
 		@JoinColumn(name="PARENT_ID1", referencedColumnName="PARENT_ID1"),
@@ -36,7 +36,7 @@ public class Child {
 		private static final long serialVersionUID = 4568266419080776715L;
 		
 		@Column(name = "CHILD_ID")
-		private String id; // @EmbeddedId private ChildId id; 매핑
+		private String id;
 		
 		private Parent.ParentId parentId; // @MapsId("parentId") 매핑
 	}
